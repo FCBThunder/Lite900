@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+    <title>FCBThunder | PS4 | 9.00 Playground</title>
+    <style>
+body { background-image:url('bg.jpg'); background-repeat:repeat; color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #b8b8b8;transform: translate(-50%, -50%);}
+.button{background-color: #008CBA;color: white;height: 11%;width: 160px;cursor: pointer;font-size: medium;border-radius: 4px;border: 2px solid #555555;transition-duration: 0.4s;}
+.button:hover{background-color: #555555;color: white;}
+    </style>
+    <script>
+if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+function awaitpl() {
+  msgs.innerHTML= LoadedMSG;
+ }
+function ghdone() {
+  msgs.innerHTML= LoadedMSG;
+}
+
+function toogle_payload(){
+var req = new XMLHttpRequest();
+req.responseType = "arraybuffer";
+req.open("GET",PLfile,true);
+req.send();
+req.onreadystatechange=function(){
+if (req.readyState == 4){ //Improvement.
+  ghPL = req.response;
+  setTimeout(poc, 1500);
+  }
+};
+}
+</script> <script src="int64.js"></script>
+    <script src="rop.js"></script>
+    <script src="kexploit.js"></script>
+    <script src="webkit.js"></script>
+    <h1 style="font-size:25px;text-align:center;color:white"><span style="font-family: Trebuchet MS;"><b></b></span><span
+        style="font-family: Trebuchet MS;"><b>
+          <h1 style="font-size:25px;text-align:center;color:white"><span style="font-family: Trebuchet MS;"><b>
+                <h1 style="font-size:25px;text-align:center;color:white"><span style="font-family: Trebuchet MS;"><b>FCBThunder
+                      | PS4 | 9.00 Playground <i>Lite</i><br>
+                    </b></span></h1>
+                <div id="mymenu" style="text-align:center">
+                  <div text-align="center"><span style="color: #008cba;"><span style="font-family: Trebuchet MS;">Pass
+                        = <span id="passCounter"></span>&nbsp; |&nbsp; Fail = <span
+                          id="failCounter"></span></span></span></div>
+                  <span style="color: #008cba;"> <span style="font-family: Trebuchet MS;">
+                    </span> </span>
+                  <div style="width:100%;font-size:20px;color:white"><span style="font-family: Trebuchet MS;"><span
+                        style="color: #008cba;"> Firmware version </span><span
+                        id="PS4fw"></span></span></div>
+                  <span style="font-family: Trebuchet MS;"> <br>
+                  </span>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;">GoldHEN
+                      + BIN LOADER</span></div>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;"><br>
+                    </span></div>
+                  <span style="font-family: Trebuchet MS;"> <button class="button"
+                      onmouseover="msgs.innerHTML='By SiSTRo'" ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_goldhenb2(); return false">GoldHEN</button>
+                    <button class="button" onmouseover="msgs.innerHTML='Sent payloads to port 9020 via NetCat'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_binloader(); return false">Port 9020</button><br>
+                    <br>
+                  </span>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;">PAYLOADS</span></div>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;"><br>
+                    </span></div>
+                  <span style="font-family: Trebuchet MS;"> <button class="button"
+                      onmouseover="msgs.innerHTML='Orbis Tool Box 1190'" ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_orbistoolbox(); return false">Orbis Toolbox</button>
+                    <button class="button" onmouseover="msgs.innerHTML='Disable Updates'"
+                      ;="onmouseout=" msgs.innerhtml="FCBThunder PS4 Playground"
+                      "="" onclick="load_disableupdates(); return false">Disable
+                      Updates</button> <button class="button" onmouseover="msgs.innerHTML='Ftp v1.3 - From xVortex ported by Al Azif'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_ftp(); return false">FTP</button> <button class="button"
+                      onmouseover="msgs.innerHTML='History Blocker 2.0 from Stooged ported by Al Azif'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_historyblocker(); return false">History
+                      Blocker</button> <button class="button" onmouseover="msgs.innerHTML='WebRTE 1.0 by PS4 Trainer'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_webrte(); return false">WebRTE</button> <button
+                      class="button" onmouseover="msgs.innerHTML='Disable ASLR ported By Al Azif'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_disableaslr(); return false">Disable ASLR</button>
+                    <br>
+                    <br>
+                  </span>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;">OTHER</span></div>
+                  <div style="font-size:16px"><span style="font-family: Trebuchet MS;"><br>
+                    </span></div>
+                  <span style="font-family: Trebuchet MS;"> <a href="payload.html#p0=mira.js&amp;p1=pl_LinuxLoader.js"><button
+                        class="button" onmouseover="msgs.innerHTML='Linux Loader 1GB VRAM by Nazky'"
+                        ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                        type="button">Linux 1GB</button></a> <button class="button"
+                      onmouseover="msgs.innerHTML='BeefQueefMod GTA V 1.38'" ;=""
+                      onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'" onclick="load_gtavbeefqueef138(); return false">GTA
+                      V 1.38</button> <button class="button" onmouseover="msgs.innerHTML='Red Dead Redemption II Mod 1.24'"
+                      ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'"
+                      onclick="load_rdr2_124(); return false">RDR2 1.24</button>
+                    <a href="http://ps4trainer.com/Trainer/index.html"><button class="button"
+                        onmouseover="msgs.innerHTML='PS4 Trainer'" ;="" onmouseout="msgs.innerHTML='FCBThunder PS4 Playground'">PS4
+                        Trainer</button>
+                      <div style="font-size:18px"><span style="font-family: Trebuchet MS;"><br>
+                        </span></div>
+                      <div style="font-size:18px"><span style="font-family: Trebuchet MS;">Press
+                          the&nbsp;<img src="PlayStation_button.png" alt="PS Button"
+                            height="20" width="20"> Button to return to menu.</span></div>
+                      <br>
+                      <span style="font-family: Trebuchet MS;font-size:16px">|
+                        THANK YOU PS4 Scene Community |</span><br>
+                    </a></span></div>
+                <script>
+    var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("PlayStation 4/","");
+    if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed to v"+UA};
+    </script>
+                <script>
+    if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount=0;
+     if (localStorage.passCounter == null || localStorage.passCounter == undefined ){
+      passCounter.innerHTML=localStorage.passcount;}
+    if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount=0;
+     if (localStorage.failCounter == null || localStorage.failCounter == undefined ){
+      failCounter.innerHTML=localStorage.failcount;}
+</script> <script>
+var exec_type = "";
+function load_goldhenb2(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Preparing GoldHEN 2.0B2. Wait 30 seconds!</h1>";
+LoadedMSG="GoldHEN 2.0B2 Loaded";
+PLfile = "pl_goldhen20b2.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_binloader(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading BIN Loader on Port 9020. Wait 20-30 seconds!";
+LoadedMSG="Waiting for payload on Port 9020...";
+exec_type = "binloader";
+setTimeout(poc, 1500);
+}
+
+function load_orbistoolbox(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Orbis Toolbox 1190. Wait 20-30 seconds!</h1>";
+LoadedMSG="Orbis Toolbox 1190 Loaded";
+PLfile = "pl_OrbisToolbox.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_disableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading... Wait 20-30 seconds!</h1>";
+LoadedMSG="Disable Updates loaded";
+PLfile = "pl_disableupdates.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_dumper(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading App Dumper. Wait 20-30 seconds!</h1>";
+LoadedMSG="App Dumper Loaded";
+PLfile = "pl_appdumper.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_ftp(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Ftp. Wait 20-30 seconds!</h1>";
+LoadedMSG="Ftp Loaded";
+PLfile = "pl_ftp.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_gtavbeefqueef138(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading BeefQueefMod 1.38. Wait 20-30 seconds!</h1>";
+LoadedMSG="BeefQueefMod 1.38 Loaded";
+PLfile = "pl_BeefQueefMod138.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_rdr2_124(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.24. Wait 20-30 seconds!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.24 Loaded";
+PLfile = "pl_rdr2124.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_historyblocker(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading History-Blocker. Wait 20-30 seconds!</h1>";
+LoadedMSG="History-Blocker Loaded";
+PLfile = "pl_historyblocker.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_Linux1gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 1gb. Wait 20-30 seconds!</h1>";
+LoadedMSG="Linux 1gb Loaded";
+PLfile = "pl_LinuxLoader.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_webrte(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading WebRTE. Wait 20-30 seconds!</h1>";
+LoadedMSG="WebRTE Loaded";
+PLfile = "pl_webrte.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_disableaslr(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-ASLR. Wait 20-30 seconds!</h1>";
+LoadedMSG="Disable-ASLR Loaded";
+PLfile = "pl_disableaslr.bin";
+exec_type = "payload";
+toogle_payload();
+}
+</script> </b></span></h1></b></span></h1>
+  </body>
+</html>
